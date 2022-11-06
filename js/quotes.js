@@ -1,17 +1,5 @@
 const quotes = [
     {
-        quote : "김병지 x발럼!!!",
-        author : "감스트",
-    },
-    {
-        quote : "아~ 오늘 x같다~",
-        author : "브베",
-    },
-    {
-        quote : "퇴근하고싶다~",
-        author : "박범근",
-    },
-    {
         quote : "삶이 있는 한 희망은 있다",
         author : "키케로",
     },
@@ -32,48 +20,68 @@ const quotes = [
         author : "찰리 채플린",
     },
     {
-        quote: 'I never dreamed about success, I worked for it',
-        author: 'Estee Lauder'
+        quote : " 행복의 한 쪽 문이 닫히면 다른 쪽 문이 열린다. 그러나 흔히 우리는 닫혀진 문을 오랫동안 보기 때문에 우리를 위해 열려 있는 문을 보지 못한다.",
+        author : "헬렌 켈러",
     },
     {
-        quote: 'Do not try to be original, just try to be good.',
-        author: 'Paul Rand'
+        quote : "만족할 줄 아는 사람은진정한 부자이고, 탐욕스러운 사람은진실로 가난한 사람이다.",
+        author : "솔론",
     },
     {
-        quote: 'Do not be afraid to give up the good to go for the great',
-        author: 'John D. Rockefeller'
+        quote : "지금이야 말로 일할때다. 지금이야말로 싸울때다. 지금이야말로 나를 더 훌륭한 사람으로 만들때다 오늘 그것을 못하면 내일 그것을 할수있는가",
+        author : "토마스 아켐피스",
     },
     {
-        quote: 'If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.',
-        author: 'Martin Luther King Jr.'
+        quote : "직접 눈으로 본 일도 오히려 참인지 아닌지 염려스러운데 더구나 등뒤에서 남이 말하는 것이야 어찌 이것을 깊이 믿을 수 있으랴?",
+        author : "명심보감",
     },
     {
-        quote: 'Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.',
-        author: 'Thomas Edison'
+        quote : "이미끝나버린 일을 후회하기 보다는 하고 싶었던 일들을 하지못한 것을 후회하라.",
+        author : "탈무드",
     },
     {
-        quote: 'The fastest way to change yourself is to hang out with people who are already the way you want to be',
-        author: 'REid Hoffman'
+        quote : "내가 헛되이 보낸 오늘은 어제 죽어간 이들이 그토록 바라던 하루이다 단 하루면 인간적인 모든 것을 멸망시킬수도 다시 소생시킬수도 있다.",
+        author : "소포클레스",
     },
     {
-        quote: 'Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations',
-        author: 'Tim O Reilly'
+        quote : "삶을 사는 데는 단 두가지 방법이 있다. 하나는 기적이 전혀 없다고 여기는 것이고 또 다른 하나는 모든 것이 기적이라고 여기는방식이다. ",
+        author : "알베르트 아인슈타인",
     },
     {
-        quote: 'Some people dream of success, while other people get up every morning and make it happen',
-        author: 'Wayne Huizenga'
+        quote : "평생 살 것처럼 꿈을 꾸어라.그리고 내일 죽을 것처럼 오늘을 살아라.",
+        author : "제임스 딘",
     },
     {
-        quote: 'The only thing worse than starting something and falling.. is not starting something',
-        author: 'SEth Godin'
+        quote : "한번의 실패와 영원한 실패를 혼동하지 마라 ",
+        author : "F.스콧 핏제랄드",
     },
     {
-        quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
-        author: 'Jim Rohn'
+        quote : "피할수 없으면 즐겨라",
+        author : "로버트 엘리엇",
+    },
+    {
+        quote : "1퍼센트의 가능성, 그것이 나의 길이다.",
+        author : "나폴레옹",
+    },
+    {
+        quote : "고통이 남기고 간 뒤를 보라! 고난이 지나면 반드시 기쁨이 스며든다.",
+        author : "괴테",
+    },
+    {
+        quote : "마음만을 가지고 있어서는 안된다. 반드시 실천하여야 한다.",
+        author : "이소룡",
+    },
+    {
+        quote : "만약 우리가 할 수 있는 일을 모두 한다면 우리들은 우리자신에 깜짝 놀랄 것이다.",
+        author : "에디슨",
+    },
+    {
+        quote : "해야 할 것을 하라. 모든 것은 타인의 행복을 위해서, 동시에 특히 나의 행복을 위해서이다.",
+        author : "톨스토이",
     },
 ]
-const quote =  document.querySelectorAll('#quote span')[0];
-const author = document.querySelectorAll('#quote span')[1];
+const quote =  document.querySelectorAll('#quote div')[0];
+const author = document.querySelectorAll('#quote div')[1];
 
 const toDayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
