@@ -1,6 +1,8 @@
+const toDWrap = document.querySelector('.todo-wrap')
 const toDoForm = document.getElementById('todo-form');
 const toDoInput = toDoForm.querySelector('input');
 const toDoList = document.getElementById('todo-list');
+const btnToggle = toDoForm.querySelector('.btn-toggle');
 
 const TODOS_KEY = 'todos';
 
@@ -54,6 +56,9 @@ if (savedToDos !== null ) {
     parsedToDos.forEach(paintToDo);
 }
 
-function sexyFilter() {
-    return true
+function toggleToDo() {
+    toDWrap.classList.toggle('on');
 }
+
+btnToggle.addEventListener(`click`,toggleToDo);
+toDoInput.addEventListener(`click`, () => toDWrap.classList.add('on'));
