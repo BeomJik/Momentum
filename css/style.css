@@ -6,33 +6,161 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .hide {
   display: none;
 }
 
+.wrap {
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  padding-top: 75px;
+}
+.title #login-form {
+  display: flex;
+  justify-content: center;
+}
+.title #login-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 0 0 5px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+  width: 320px;
+  text-align: center;
+}
+.title #login-form input::-moz-placeholder {
+  color: #fff;
+}
+.title #login-form input:-ms-input-placeholder {
+  color: #fff;
+}
+.title #login-form input::placeholder {
+  color: #fff;
+}
+.title #login-form.hide {
+  display: none;
+}
+.title .greeting-area #greeting {
+  font-size: 3rem;
+}
+.title .greeting-area #rename {
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  transform: translateX(10px);
+}
+
+.clock-wrap {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.clock-wrap #clock {
+  font-size: 5rem;
+}
+
 .weather-wrap {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+  font-size: 2.5rem;
 }
-.weather-wrap #weather {
+.todo-wrap {
+  position: absolute;
+  bottom: -315px;
+  right: 20px;
+  transition: 0.5s;
+}
+.todo-wrap #todo-form {
+  position: relative;
+}
+.todo-wrap #todo-form input {
+  background-color: var(--bs-gray-100);
+  border: none;
+  border-radius: 10px 10px 0 0;
+  height: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.todo-wrap #todo-form .btn-toggle {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 24px;
+  height: 24px;
+}
+.todo-wrap #todo-form .btn-toggle i {
+  color: #000;
+  transition: 0.5s;
+}
+.todo-wrap #todo-list {
+  height: 300px;
+  overflow-y: scroll;
+  background-color: var(--bs-gray-100);
+  opacity: 0.8;
+  border-radius: 0 0 10px 10px;
+  color: var(--bs-dark);
+  text-align: left;
+  padding: 0;
+}
+.todo-wrap #todo-list li {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px 0 20px;
+}
+.todo-wrap #todo-list span {
+  margin-right: 5px;
+}
+.todo-wrap #todo-list .btn {
+  padding: 0;
+}
+.todo-wrap #todo-list::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+.todo-wrap #todo-list::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 77, 87);
+  border-radius: 5px;
+}
+.todo-wrap #todo-list::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.todo-wrap.on {
+  bottom: 0;
+}
+.todo-wrap.on i {
+  transform: rotate(180deg);
 }
 
 .quote-wrap {
   position: absolute;
-  bottom: 0%;
+  bottom: 3%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .quote-wrap #quote {
-  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
 }
-.quote-wrap #quote .author {
-  margin: 1 0px 0;
+.quote-wrap .author {
+  margin: 10px 0;
 }/*# sourceMappingURL=style.css.map */
