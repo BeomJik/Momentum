@@ -18,13 +18,17 @@ function onGeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
         const weatherContainer = document.querySelector(`#weather`);
-        const weather = weatherContainer.querySelector(`#weather .weather`);
         const city = weatherContainer.querySelector(`#weather .city`);
+        const temp = weatherContainer.querySelector(`#weather .temp`);
         const icon = weatherContainer.querySelector(`#weather .icon`);
-        let icon_info = (data.weather[0].icon).substr(0,2);
-        weather.innerText = data.weather[0].main;
+        const weather = weatherContainer.querySelector(`#weather .weather`);
+        const desc = weatherContainer.querySelector(`#weather .desc`);
         city.innerText = data.name;
+        temp.innerText = Math.floor(data.main.temp) + 'º';
+        let icon_info = (data.weather[0].icon).substr(0,2);
         icon.classList.add(weatherIcon[icon_info]);
+        weather.innerText = data.weather[0].main;
+        desc.innerText = data.weather[0].description;
     });
 }
 function onGeoError() {
