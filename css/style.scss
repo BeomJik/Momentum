@@ -64,20 +64,14 @@ body {
 }
 
 .clock-wrap {
-    position: absolute;
-    top : 25%;
-    left: 50%;
-    transform: translate(-50%,0%);
+    margin-top: 5rem;
     #clock {
         font-size: 5rem;
     }
 }
 
 .weather-wrap {
-    position: absolute;
-    top : 45%;
-    left: 50%;
-    transform: translate(-50%,0%);
+    margin-top: 5rem;
     font-size: 2.5rem;
     #weather {
 
@@ -191,4 +185,28 @@ body {
     .author {
         margin: 10px 0;
     }
+}
+@media screen and (max-width: 576px) {
+    .title {
+        padding-top: 2.5rem;
+    }
+    .clock-wrap {
+        margin-top: 2.5rem;
+    }
+    .weather-wrap {
+        margin-top: 2.5rem;
+    }
+    .quote-wrap {
+        margin-top: 2.5rem;
+        position: static;
+        transform: none;
+    }
+    .todo-wrap { 
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    
 }
