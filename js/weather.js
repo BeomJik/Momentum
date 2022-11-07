@@ -1,3 +1,15 @@
+let weatherIcon = {
+    '01' : 'fa-sun',
+    '02' : 'fa-cloud-sun',
+    '03' : 'fa-cloud',
+    '04' : 'fa-cloud-meatball',
+    '09' : 'fa-cloud-sun-rain',
+    '10' : 'fa-cloud-showers-heavy',
+    '11' : 'fa-poo-storm',
+    '13' : 'fa-snowflake',
+    '50' : 'fa-smog'
+};
+
 function onGeoOk(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
@@ -6,11 +18,13 @@ function onGeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
         const weatherContainer = document.querySelector(`#weather`);
-        const weather = weatherContainer.querySelectorAll(`#weather div`)[0];
-        const city = weatherContainer.querySelectorAll(`#weather div`)[1];
+        const weather = weatherContainer.querySelector(`#weather .weather`);
+        const city = weatherContainer.querySelector(`#weather .city`);
+        const icon = weatherContainer.querySelector(`#weather .icon`);
+        let icon_info = (data.weather[0].icon).substr(0,2);
         weather.innerText = data.weather[0].main;
         city.innerText = data.name;
-
+        icon.classList.add(weatherIcon[icon_info]);
     });
 }
 function onGeoError() {
