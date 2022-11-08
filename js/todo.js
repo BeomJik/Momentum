@@ -38,6 +38,9 @@ function paintToDo(newTodo) {
 function handleToDoSubmit(e) {
     e.preventDefault();
     const newToDo = toDoInput.value;
+    if(newToDo == ``){
+        return
+    }
     toDoInput.value = "";
     const newToDoObj = {
         text : newToDo,
