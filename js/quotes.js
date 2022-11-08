@@ -1,83 +1,83 @@
 const quotes = [
-    {
-        quote : "삶이 있는 한 희망은 있다",
-        author : "키케로",
+{
+        quote : "As long as there is life, there is hope",
+        author : "Cicero",
     },
     {
-        quote : "산다는것 그것은 치열한 전투이다",
-        author : "로망로랑",
+        quote : "To live is a fierce battle",
+        author : "Roman Laurent",
     },
     {
-        quote : "하루에 3시간을 걸으면 7년 후에 지구를 한바퀴 돌 수 있다.",
-        author : "사무엘존슨",
+        quote: "If you walk 3 hours a day, you can circle the Earth in 7 years.",
+        author : "Samuel Johnson",
     },
     {
-        quote : "언제나 현재에 집중할수 있다면 행복할것이다.",
-        author : "파울로 코엘료",
+        quote : "If you can always focus on the present, you will be happy.",
+        author: "Paulo Coelho",
     },
     {
-        quote : "진정으로 웃으려면 고통을 참아야하며 , 나아가 고통을 즐길 줄 알아야 해",
-        author : "찰리 채플린",
+        quote: "In order to truly laugh, you must endure pain, and you must also learn to enjoy it",
+        author: "Charlie Chaplin",
     },
     {
-        quote : " 행복의 한 쪽 문이 닫히면 다른 쪽 문이 열린다. 그러나 흔히 우리는 닫혀진 문을 오랫동안 보기 때문에 우리를 위해 열려 있는 문을 보지 못한다.",
-        author : "헬렌 켈러",
+        quote: "When one door of happiness closes, the other opens. But often we look at the closed door for a long time and thus do not see the one that is open for us.",
+        author: "Helen Keller",
     },
     {
-        quote : "만족할 줄 아는 사람은진정한 부자이고, 탐욕스러운 사람은진실로 가난한 사람이다.",
-        author : "솔론",
+        quote: "He who knows how to be content is truly rich, and he who is greedy is truly poor.",
+        author : "Solon",
     },
     {
-        quote : "지금이야 말로 일할때다. 지금이야말로 싸울때다. 지금이야말로 나를 더 훌륭한 사람으로 만들때다 오늘 그것을 못하면 내일 그것을 할수있는가",
-        author : "토마스 아켐피스",
+        quote : "Now is the time to work. Now is the time to fight. Now is the time to make me a better person. If I can't do it today, can I do it tomorrow?",
+        author: "Thomas Akempis",
     },
     {
-        quote : "직접 눈으로 본 일도 오히려 참인지 아닌지 염려스러운데 더구나 등뒤에서 남이 말하는 것이야 어찌 이것을 깊이 믿을 수 있으랴?",
-        author : "명심보감",
+        quote : "I'm worried whether what I've seen with my own eyes is actually true, but what's more, it's what other people are saying behind my back. How can you believe this deeply?",
+        author : "Myeongsimbogam",
     },
     {
-        quote : "이미끝나버린 일을 후회하기 보다는 하고 싶었던 일들을 하지못한 것을 후회하라.",
-        author : "탈무드",
+        quote : "Regret for not doing the things you wanted to do rather than regretting things that have already been done.",
+        author : "Talmud",
     },
     {
-        quote : "내가 헛되이 보낸 오늘은 어제 죽어간 이들이 그토록 바라던 하루이다 단 하루면 인간적인 모든 것을 멸망시킬수도 다시 소생시킬수도 있다.",
-        author : "소포클레스",
+        quote : "Today I spent in vain is the day that those who died yesterday longed for. In just one day, everything that is human can be destroyed or revived.",
+        author: "Sophocles",
     },
     {
-        quote : "삶을 사는 데는 단 두가지 방법이 있다. 하나는 기적이 전혀 없다고 여기는 것이고 또 다른 하나는 모든 것이 기적이라고 여기는방식이다. ",
-        author : "알베르트 아인슈타인",
+        quote: "There are only two ways to live life. One is to think that there are no miracles at all, and the other is to think that everything is a miracle.",
+        author: "Albert Einstein",
     },
     {
-        quote : "평생 살 것처럼 꿈을 꾸어라.그리고 내일 죽을 것처럼 오늘을 살아라.",
-        author : "제임스 딘",
+        quote : "Dream as if you will live your life, and live today as if you will die tomorrow.",
+        author: "James Dean",
     },
     {
-        quote : "한번의 실패와 영원한 실패를 혼동하지 마라 ",
-        author : "F.스콧 핏제랄드",
+        quote: "Don't confuse one failure with eternal failure",
+        author : "F. Scott Fitzgerald",
     },
     {
-        quote : "피할수 없으면 즐겨라",
-        author : "로버트 엘리엇",
+        quote : "If you can't avoid it, enjoy it",
+        author: "Robert Elliott",
     },
     {
-        quote : "1퍼센트의 가능성, 그것이 나의 길이다.",
-        author : "나폴레옹",
+        quote : "1% chance, that's my way.",
+        author : "Napoleon",
     },
     {
-        quote : "고통이 남기고 간 뒤를 보라! 고난이 지나면 반드시 기쁨이 스며든다.",
-        author : "괴테",
+        quote : "Look after the pain left behind! After suffering, joy will surely permeate.",
+        author: "Goethe",
     },
     {
-        quote : "마음만을 가지고 있어서는 안된다. 반드시 실천하여야 한다.",
-        author : "이소룡",
+        quote : "You must not have only your heart. You must practice it.",
+        author : "Bruce Lee",
     },
     {
-        quote : "만약 우리가 할 수 있는 일을 모두 한다면 우리들은 우리자신에 깜짝 놀랄 것이다.",
-        author : "에디슨",
+        quote : "If we do all we can, we will surprise ourselves.",
+        author : "Edison",
     },
     {
-        quote : "해야 할 것을 하라. 모든 것은 타인의 행복을 위해서, 동시에 특히 나의 행복을 위해서이다.",
-        author : "톨스토이",
+        quote : "Do what you have to do. Everything is for the well-being of others, and at the same time especially for your own happiness.",
+        author: "Tolstoy",
     },
 ]
 const quote =  document.querySelectorAll('#quote div')[0];
