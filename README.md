@@ -1,4 +1,4 @@
-# 할 일 목록
+# todo-list와 날씨 정보
 
 openweathermap api 를 활용하여 날씨 정보를 받아왔습니다..
 
