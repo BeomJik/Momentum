@@ -112,6 +112,7 @@ body {
     bottom: -315px; 
     right: 20px;
     transition: .5s;
+    width: 280px;
     #todo-form {
         position: relative;
         input {
@@ -122,6 +123,7 @@ body {
             padding-left: 20px;
             box-sizing: border-box;
             font-weight: 500;
+            width: 100%;
         }
         .btn-toggle {
             position: absolute;
@@ -229,6 +231,7 @@ body {
         }
     }
     .todo-wrap { 
+        width: 70vw;
         right: 50%;
         transform: translateX(50%);
         #todo-list {
@@ -240,8 +243,5 @@ body {
             }
         }
     }
-    
-}
-@media screen and (min-width: 1200px) {
     
 }

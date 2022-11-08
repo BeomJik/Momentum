@@ -92,6 +92,7 @@ body {
   bottom: -315px;
   right: 20px;
   transition: 0.5s;
+  width: 280px;
 }
 .todo-wrap #todo-form {
   position: relative;
@@ -104,6 +105,7 @@ body {
   padding-left: 20px;
   box-sizing: border-box;
   font-weight: 500;
+  width: 100%;
 }
 .todo-wrap #todo-form .btn-toggle {
   position: absolute;
@@ -206,6 +208,7 @@ body {
     font-size: 3.125vw;
   }
   .todo-wrap {
+    width: 70vw;
     right: 50%;
     transform: translateX(50%);
   }
