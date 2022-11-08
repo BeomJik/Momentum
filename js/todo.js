@@ -1,4 +1,6 @@
-const toDWrap = document.querySelector('.todo-wrap')
+const toDWrap = document.querySelector('.todo-wrap');
+const wrap = document.querySelector('.wrap');
+const blurFilter = wrap.querySelector(`.blur`);
 const toDoForm = document.getElementById('todo-form');
 const toDoInput = toDoForm.querySelector('input');
 const toDoList = document.getElementById('todo-list');
@@ -60,5 +62,14 @@ function toggleToDo() {
     toDWrap.classList.toggle('on');
 }
 
+function addToDo() {
+    toDWrap.classList.add('on');
+}
+
+function remvoeToDo() {
+    toDWrap.classList.remove('on');
+}
+
 btnToggle.addEventListener(`click`,toggleToDo);
-toDoInput.addEventListener(`click`, () => toDWrap.classList.add('on'));
+toDoInput.addEventListener(`click`, addToDo);
+blurFilter.addEventListener(`click`, remvoeToDo);
