@@ -2,6 +2,7 @@ const loginForm = document.querySelector('#login-form');
 const loginInput = document.querySelector('#login-form input');
 const greeting = document.querySelector('#greeting');
 const reName = document.querySelector('#rename');
+const btnLogin = document.querySelector('#login');
 
 const HIDE_CLASSNAME = 'hide';
 const USERNAME_KEY = 'username';
@@ -39,4 +40,15 @@ function onReName(e) {
     loginForm.addEventListener('submit',onLogomSubmit);
     greeting.innerText = ``;
     reName.classList.add(HIDE_CLASSNAME);
+    loginInput.focus();
 }
+
+// 이름 입력창 input 입력후 blur 되면 로그인 버튼 클릭이 된다.
+loginInput.addEventListener('blur',function name(e) {
+    let event = new MouseEvent('click', {
+        'view' : window,
+        'bubbles' : true,
+        'cancelable' : true 
+    });
+    btnLogin.dispatchEvent(event);
+});
