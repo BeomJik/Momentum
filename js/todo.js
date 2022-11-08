@@ -62,14 +62,24 @@ function toggleToDo() {
     toDWrap.classList.toggle('on');
 }
 
-function addToDo() {
+function upToDo() {
     toDWrap.classList.add('on');
 }
 
-function remvoeToDo() {
+function downToDo() {
     toDWrap.classList.remove('on');
 }
 
 btnToggle.addEventListener(`click`,toggleToDo);
-toDoInput.addEventListener(`click`, addToDo);
-blurFilter.addEventListener(`click`, remvoeToDo);
+toDoInput.addEventListener(`click`, upToDo);
+blurFilter.addEventListener(`click`, downToDo);
+
+// toDoInput 입력후 blur 되면 submit 된다
+toDoInput.addEventListener('blur',function name(e) {
+    let event = new MouseEvent('submit', {
+        'view' : window,
+        'bubbles' : true,
+        'cancelable' : true 
+    });
+    toDoForm.dispatchEvent(event);
+});
