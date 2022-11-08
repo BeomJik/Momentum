@@ -47,7 +47,7 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
-  width: 320px;
+  width: 440px;
   text-align: center;
 }
 .title #login-form input::-moz-placeholder {
@@ -83,6 +83,8 @@ body {
 
 .weather-wrap {
   margin-top: 5rem;
+}
+.weather-wrap #weather {
   font-size: 2.5rem;
 }
 .todo-wrap {
@@ -101,6 +103,7 @@ body {
   height: 50px;
   padding-left: 20px;
   box-sizing: border-box;
+  font-weight: 500;
 }
 .todo-wrap #todo-form .btn-toggle {
   position: absolute;
@@ -124,6 +127,7 @@ body {
   color: var(--bs-dark);
   text-align: left;
   padding: 0;
+  font-weight: 500;
 }
 .todo-wrap #todo-list li {
   display: flex;
@@ -167,27 +171,48 @@ body {
   font-weight: 500;
   font-size: 18px;
 }
+.quote-wrap .quote {
+  width: 100%;
+}
 .quote-wrap .author {
   margin: 10px 0;
 }
 
 @media screen and (max-width: 576px) {
   .title {
-    padding-top: 2.5rem;
+    padding-top: 7vw;
+  }
+  .title .greeting-area #greeting {
+    font-size: 8vw;
   }
   .clock-wrap {
-    margin-top: 2.5rem;
+    margin-top: 7vw;
+  }
+  .clock-wrap #clock {
+    font-size: 13vw;
   }
   .weather-wrap {
-    margin-top: 2.5rem;
+    margin-top: 7vw;
+  }
+  .weather-wrap #weather {
+    font-size: 7vw;
   }
   .quote-wrap {
-    margin-top: 2.5rem;
+    margin-top: 7vw;
     position: static;
     transform: none;
+  }
+  .quote-wrap #quote {
+    font-size: 3.125vw;
   }
   .todo-wrap {
     right: 50%;
     transform: translateX(50%);
+  }
+  .todo-wrap #todo-list {
+    font-size: 3vw;
+  }
+  .todo-wrap #todo-form input {
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=style.css.map */
