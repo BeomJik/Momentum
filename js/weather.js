@@ -28,7 +28,14 @@ function onGeoOk(position) {
         let icon_info = (data.weather[0].icon).substr(0,2);
         icon.classList.add(weatherIcon[icon_info]);
         weather.innerText = data.weather[0].main;
-        desc.innerText = data.weather[0].description;
+        desc.innerText = data.weather[0].description;      
+        // 눈 오는 날씨일 때 눈 내리는 애니메이션 구현 
+        if (icon_info == 13) {
+            for (let i = 0; i < 50; i++) {
+                makeSnowflake();
+                setTimeout(makeSnowflake, 500 * i);
+            }            
+        }
     });
 }
 function onGeoError() {
